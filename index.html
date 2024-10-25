@@ -9,93 +9,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="./img/logo-wit.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo/logo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div>
-        <header>
-            <div class="header_container">
-                <img class="scroll_top" id="nav_bar_img" src="./img/logo-wit.png" alt="logo" href="#home">
-                <nav class="nav_bar_container">
-                    <a href="#project_1" class="scroll-to">Projects</a>
-                    <a href="#portfolio">About</a>
-                    <a href="" class="scroll-down">Contact</a>
-                </nav>
-            </div>
-        </header>
+    <header>
+        <div class="header_container">
+            <nav class="nav_bar_container">
+                <a href="#project_1" class="scroll-to">Projects</a>
+                <a href="#portfolio">About</a>
+                <a href="" class="scroll-down">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="info_container">
+        <h1>I'm Quinn Otto and <br> i am a <span class="highlight">web developer!</span> And I create <span id="dynamic-text"></span> websites!</h1>
     </div>
-
-    <div class="center_container">
-        <div class="center_titel grid">
-            <h1 id="center_titel_h1">Ik ben Quinn Otto.</h1>
-            <h2 id="center_about_h2">Creative Software Developer in opleiding aan het Grafisch Lyceum Rotterdam, met een passie voor coderen en basketbal.</h2>
-        </div>
-        <div id="projects" class="center_project_list grid">
-            <h1 id="center_project_titel">Projecten</h1>
-            <ul>
-                <li class="center_project_list_li1"><a href="#project_1" class="scroll-to">Quinnotto.nl</a></li>
-
-            </ul>
-        </div>
-    </div>
-
-    <div class="project_container">
-        <div id="project_1">
-            <div class="project_1_main">
-                <p>1 / 5</p>
-                <h1 class="project_1_main_h1 grid">quinnotto.nl - Een portfolio website voor mezelf</h1>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer_container">
-            <div class="footer_contact grid_60">
-                <h1 id="footer_title">Leuk je te ontmoeten, <br> Laten we in contact komen.</h1>
-                <p id="footer_kom_in_contact">Vind mij op</p>
-                <div class="footer_contact_list">
-                    <img id="email" src="./img/social/logo_mail.png" alt="Email" style="cursor: pointer;">
-                    <img style="margin-left: 3%;" id="phone" src="./img/social/logo_phone.png" alt="Phone" style="cursor: pointer;">
-                    <img style="margin-left: 3%;" id="github" src="./img/social/logo_github.png" alt="Github" style="cursor: pointer;">
-                </div>
-                <p id="footer_copyright">&copy; 2024 Quinn Otto </p>
-            </div>
-            <div class="footer_input_container">
-                <h1>Zeg Hallo</h1>
-                <div class="footer_input_form grid_40">
-                    <div id="footer_input_name_email_div">
-                        <div class="input_container">
-                            <label for="footer_input_name">Naam</label>
-                            <input class="grid" type="text" id="footer_input_name">
-                        </div>
-                        <div class="input_container">
-                            <label for="footer_input_email">Email</label>
-                            <input class="grid" type="email" id="footer_input_email">
-                        </div>
-                    </div>
-                    <div id="footer_input_subject_phone_div">
-                        <div class="input_container">
-                            <label for="footer_input_subject">Onderwerp</label>
-                            <input class="grid" type="text" id="footer_input_subject">
-                        </div>
-                        <div class="input_container">
-                            <label for="footer_input_phone">Bedrijf</label>
-                            <input class="grid" type="text" id="footer_input_phone">
-                        </div>
-                    </div>
-                    <div id="footer_input_beschrijfing_div" class="input_container">
-                        <label for="footer_input_beschrijfing">Beschrijving</label>
-                        <input type="text" id="footer_input_beschrijfing">
-                    </div>
-                </div>
-                
-                <p class="footer_input_verstuur_knop">Verstuur</p>
-            </div>
-        </div>
-    </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script src="script.js" defer></script>
 </body>

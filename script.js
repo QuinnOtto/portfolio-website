@@ -117,3 +117,26 @@ document.addEventListener("DOMContentLoaded", function() {
         })
       });
 });
+const dynamicText = document.getElementById("dynamic-text");
+const words = ["responsive", "interactive", "impressive", "innovative"];
+let wordIndex = 0;
+const colors = ["#42C2FF", "#1E96FC", "#5ADBFF"]
+
+function changeText() {
+    dynamicText.style.opacity = 0;
+    dynamicText.style.transform = "translateY(-20px)";
+    
+    setTimeout(() => {
+        let kleur = Math.floor(Math.random() * colors.length);
+        dynamicText.textContent = words[wordIndex];
+        dynamicText.style.color = colors[kleur];
+        dynamicText.style.opacity = 1;
+        dynamicText.style.transform = "translateY(0)";
+
+        wordIndex = (wordIndex + 1) % words.length;
+    }, 300);
+}
+
+setInterval(changeText, 2000);
+
+

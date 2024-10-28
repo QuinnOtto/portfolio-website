@@ -132,6 +132,7 @@ function changeText() {
         dynamicText.style.color = colors[kleur];
         dynamicText.style.opacity = 1;
         dynamicText.style.transform = "translateY(0)";
+        dynamicText.style.transition = "all 0.3s ease-in-out";
 
         wordIndex = (wordIndex + 1) % words.length;
     }, 300);

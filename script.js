@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+    
     const scrollTop = document.querySelectorAll('.scroll_top');
     scrollTop.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -137,7 +138,5 @@ function changeText() {
         wordIndex = (wordIndex + 1) % words.length;
     }, 300);
 }
-
+changeText();
 setInterval(changeText, 2000);
-
-

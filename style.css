@@ -65,7 +65,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 200px;
-  margin-top: 125px;
+  margin-top: 50px;
   text-align: center;
   color: #ffffff;
   padding: 20px;
@@ -108,8 +108,8 @@ body {
   height: 60px;
   padding-left: 10px;
   align-items: center;
-  text-align: left; /* Set alignment on container */
-  flex-direction: row; /* Ensures elements align horizontally */
+  text-align: left;
+  flex-direction: row;
 }
 
 #js,
@@ -124,7 +124,7 @@ body {
   width: 300px;
   display: flex;
   align-items: center;
-  padding-left: 10px; /* Adds padding to align content */
+  padding-left: 10px;
 }
 
 #html_text,
@@ -153,7 +153,7 @@ body {
   margin-top: 5px;
   padding: 0;
   font-size: 1.4rem;
-  text-align: left; /* Specifically align h1 left */
+  text-align: left;
 }
 #html_text p,
 #js_text p,
@@ -168,11 +168,83 @@ body {
   margin-top: 2px;
   padding: 0;
   font-size: 0.8rem;
-  text-align: left; /* Specifically align p left */
+  text-align: left;
 }
 .programingLan_container img {
   width: 28px;
   height: 28px;
   filter: brightness(0.9);
-  margin-right: 8px; /* Adds spacing between icon and text */
+  margin-right: 8px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.highlight {
+  color: #bac3f7;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(186, 195, 247, 0.7);
+}
+.highlight-blue {
+  color: #42C2FF;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(66, 194, 255, 0.7);
+}
+
+.highlight-dark-blue {
+  color: #1E96FC;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(30, 150, 252, 0.7);
+}
+
+.highlight-light-blue {
+  color: #5ADBFF;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(90, 219, 255, 0.7);
+}
+.projects_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 40px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.projects_container h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.project_1,
+.project_2 {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+}
+.project_1:hover,
+.project_2:hover {
+  cursor: pointer;
+}
+.project_1 img,
+.project_2 img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px 8px 0 0;
 }

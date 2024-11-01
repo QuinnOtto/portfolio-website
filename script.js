@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     requestAnimationFrame(raf);
-    
+
     const scrollLinks = document.querySelectorAll('.scroll-to');
     scrollLinks.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-    
+
     const scrollTop = document.querySelectorAll('.scroll_top');
     scrollTop.forEach(link => {
         link.addEventListener('click', function(event) {
@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
             lenis.scrollTo(0);
         });
     });
+
     const scrollToTopButton = document.querySelector('.scroll-to-top');
     if (scrollToTopButton) {
         scrollToTopButton.addEventListener('click', function(event) {
@@ -47,7 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-    const scrollDownButton = document.querySelector('.scroll-down'); 
+
+    const scrollDownButton = document.querySelector('.scroll-down');
     if (scrollDownButton) {
         scrollDownButton.addEventListener('click', function(event) {
             event.preventDefault();
@@ -79,6 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hoverBg.style.left = `${centerX}px`;
         });
     });
+
     const projectListItems = document.querySelectorAll('.center_project_list ul li');
     projectListItems.forEach(item => {
         item.style.position = 'relative';
@@ -99,38 +102,43 @@ document.addEventListener("DOMContentLoaded", function() {
             borderBottom.style.width = '0';
         });
     });
+
     document.getElementById("email").addEventListener("click", function() {
         const email = "info@quinnotto.nl";
         navigator.clipboard.writeText(email).then(() => {
-          alert("Email copied to clipboard!");
-        })
-      });
-      document.getElementById("phone").addEventListener("click", function() {
+            alert("Email copied to clipboard!");
+        });
+    });
+
+    document.getElementById("phone").addEventListener("click", function() {
         const phone = "+31 6 14466292";
         navigator.clipboard.writeText(phone).then(() => {
-          alert("phone copied to clipboard!");
-        })
-      });
-      document.getElementById("github").addEventListener("click", function() {
+            alert("Phone copied to clipboard!");
+        });
+    });
+
+    document.getElementById("github").addEventListener("click", function() {
         const github = "https://github.com/QuinnOtto/";
         navigator.clipboard.writeText(github).then(() => {
-          alert("Github copied to clipbord");
-        })
-      });
+            alert("Github copied to clipboard");
+        });
+    });
 });
+
 const dynamicText = document.getElementById("dynamic-text");
 const words = ["responsive", "interactive", "impressive", "innovative"];
 let wordIndex = 0;
-const colors = ["#42C2FF", "#1E96FC", "#5ADBFF"]
+const colors = ["#42C2FF", "#1E96FC", "#5ADBFF"];
+const classes = ["highlight-blue", "highlight-dark-blue", "highlight-light-blue"];
 
 function changeText() {
     dynamicText.style.opacity = 0;
     dynamicText.style.transform = "translateY(-20px)";
-    
+
     setTimeout(() => {
         let kleur = Math.floor(Math.random() * colors.length);
         dynamicText.textContent = words[wordIndex];
-        dynamicText.style.color = colors[kleur];
+        dynamicText.className = classes[kleur];
         dynamicText.style.opacity = 1;
         dynamicText.style.transform = "translateY(0)";
         dynamicText.style.transition = "all 0.3s ease-in-out";
@@ -138,5 +146,28 @@ function changeText() {
         wordIndex = (wordIndex + 1) % words.length;
     }, 300);
 }
+
 changeText();
 setInterval(changeText, 2000);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const fadeElements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => observer.observe(el));
+});
+
+    const project1Elements = document.getElementsByClassName("project_1");
+    Array.from(project1Elements).forEach(element => {
+        element.addEventListener("click", function() {
+            window.location.href = "https://google.com";
+        });
+    });

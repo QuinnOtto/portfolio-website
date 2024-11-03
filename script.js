@@ -171,18 +171,4 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "https://google.com";
         });
     });
-    document.addEventListener("DOMContentLoaded", () => {
-        const aboutButton = document.getElementById("about_button"); 
-        const aboutContainer = document.getElementsByClassName("about_container")[0];
-    
-        if (aboutButton) {
-            aboutButton.addEventListener("click", () => {
-                if (aboutContainer.style.display === "none") {
-                    aboutContainer.style.display = "block";
-                } else {
-                    aboutContainer.style.display = "none";
-                }
-            });
-        }
-    });
     

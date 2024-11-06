@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    document.getElementById("email").addEventListener("click", function() {
+    document.getElementById("mail").addEventListener("click", function() {
         const email = "info@quinnotto.nl";
         navigator.clipboard.writeText(email).then(() => {
             alert("Email copied to clipboard!");
@@ -165,10 +165,10 @@ document.addEventListener("DOMContentLoaded", () => {
     fadeElements.forEach(el => observer.observe(el));
 });
 
-    const project1Elements = document.getElementsByClassName("project_1");
+    const project1Elements = document.getElementsByClassName("project");
     Array.from(project1Elements).forEach(element => {
         element.addEventListener("click", function() {
-            window.location.href = "https://google.com";
+            window.location.href = "https://github.com/QuinnOtto/";
         });
     });
     

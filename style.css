@@ -75,21 +75,6 @@ body {
   margin-right: auto;
   font-size: 1.5rem;
 }
-.info_socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  margin-right: 0px;
-}
-.info_socials img {
-  padding: 20px;
-  width: 35px;
-  height: 35px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 25px;
-}
 .highlight {
   color: #bac3f7;
   font-weight: bolder;

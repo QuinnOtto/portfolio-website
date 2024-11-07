@@ -97,10 +97,8 @@ document.getElementById("phone").addEventListener("click", function() {
 
 document.getElementById("github").addEventListener("click", function() {
     const github = "https://github.com/QuinnOtto/";
-    navigator.clipboard.writeText(github).then(() => {
-        alert("Github copied to clipboard");
+    window.open(github);
     });
-});
 
 const dynamicText = document.getElementById("dynamic-text");
 const words = ["responsive", "interactive", "impressive", "innovative"];
@@ -143,6 +141,35 @@ fadeElements.forEach(el => observer.observe(el));
 const project1Elements = document.getElementsByClassName("project");
 Array.from(project1Elements).forEach(element => {
     element.addEventListener("click", function() {
-        window.location.href = "https://github.com/QuinnOtto/";
-    });
+        window.open("https://github.com/QuinnOtto/");
+        });
+});
+
+const javascriptElement = document.getElementById("js");
+javascriptElement.addEventListener("click", function() {
+    window.open("https://nl.wikipedia.org/wiki/JavaScript");
+});
+const htmlElement = document.getElementById("html");
+htmlElement.addEventListener("click", function() {
+    window.open("https://nl.wikipedia.org/wiki/HTML");
+});
+const cssElement = document.getElementById("css");
+cssElement.addEventListener("click", function() {
+    window.open("https://nl.wikipedia.org/wiki/Cascading_Style_Sheets");
+});
+const nodejsElement = document.getElementById("nodejs");
+nodejsElement.addEventListener("click", function() {
+    window.open("https://nl.wikipedia.org/wiki/Node.js");
+});
+const discordjsElement = document.getElementById("discordjs");
+discordjsElement.addEventListener("click", function() {
+    window.open("https://discord.js.org/");
+});
+const figmaElement = document.getElementById("figma");
+figmaElement.addEventListener("click", function() {
+    window.open("https://www.figma.com/");
+});
+const studentJobElement = document.getElementById("job_container_student");
+studentJobElement.addEventListener("click", function() {
+    window.open("https://www.glr.nl/opleidingen/software-developer");
 });

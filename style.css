@@ -126,6 +126,19 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10px;
+  transition: all 0.8s ease-in-out;
+}
+
+#js:hover,
+#html:hover,
+#css:hover,
+#nodejs:hover,
+#discordjs:hover,
+#figma:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 
 #html_text,
@@ -237,8 +250,13 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   color: #fff;
+  transition: all 0.8s ease-in-out;
 }
 .project:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
 .project img {
@@ -270,8 +288,14 @@ body {
   padding: 20px;
   color: #fff;
   text-align: left;
+  transition: all 0.8s ease-in-out;
 }
-
+.job_container:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
 .job_container h2 {
   font-size: 1.5rem;
   color: #42C2FF;
@@ -304,8 +328,14 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  transition: all 0.8s ease-in-out;
 }
-
+.about_container:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
 #about_container_img {
   padding: 10px;
   display: flex;

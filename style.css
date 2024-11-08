@@ -94,8 +94,8 @@ body {
   position: absolute;
   top: -100px;
   left: 15%;
-  width: 175px;
-  height: 175px;
+  width: 125px;
+  height: 125px;
   z-index: -1;
   animation: moveUpDown 3s infinite alternate;
   rotate: 15deg;
@@ -104,34 +104,43 @@ body {
 #doodle_html {
   position: absolute;
   top: -100px;
-  left: 35%;
-  width: 175px;
-  height: 175px;
+  left: 65%;
+  width: 150px;
+  height: 150px;
   z-index: -1;
   animation: moveUpDown 3s infinite alternate;
-  rotate: 15deg;
+  rotate: -10deg;
   -webkit-user-drag: none;
 }
-#doodle_js {
+#doodle_basketbal {
   position: absolute;
-  top: -400px;
-  left: 80%;
-  width: 175px;
-  height: 175px;
+  top: -375px;
+  left: 70%;
+  width: 200px;
+  height: 200px;
   z-index: -1;
   animation: moveUpDown 3s infinite alternate;
-  rotate: 30deg;
+  -webkit-user-drag: none;
+}
+#doodle_naam {
+  position: absolute;
+  top: -375px;
+  left: 10%;
+  width: 225px;
+  height: 100px;
+  z-index: -1;
+  animation: moveUpDown 3s infinite alternate;
   -webkit-user-drag: none;
 }
 @keyframes moveUpDown {
   0% {
-    margin-top: 160px;
-  }
-  50% {
     margin-top: 130px;
   }
+  50% {
+    margin-top: 100px;
+  }
   100% {
-    margin-top: 170px;
+    margin-top: 130px;
   }
 }
 

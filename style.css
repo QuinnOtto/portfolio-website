@@ -428,6 +428,7 @@ body {
 #about_container_img img {
   max-width: 100%;
   height: auto;
+  -webkit-user-drag: none;
 }
 #about_container_text {
   padding: 20px;
@@ -472,6 +473,7 @@ body {
   margin-left: 10px;
   width: 25px;
   height: 25px;
+  -webkit-user-drag: none;
 } 
 #socials_footer img:hover {
   transform: scale(1.1);

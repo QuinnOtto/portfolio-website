@@ -127,7 +127,7 @@ setInterval(changeText, 2000);
 
 const fadeElements = document.querySelectorAll(".fade-in");
 
-const observer = new IntersectionObserver((entries, observer) => {
+const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add("show");
@@ -138,11 +138,11 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 fadeElements.forEach(el => observer.observe(el));
 
-const project1Elements = document.getElementsByClassName("project");
-Array.from(project1Elements).forEach(element => {
+const project1Elements = document.querySelectorAll(".project");
+project1Elements.forEach(element => {
     element.addEventListener("click", function() {
         window.open("https://github.com/QuinnOtto/");
-        });
+    });
 });
 
 const javascriptElement = document.getElementById("js");

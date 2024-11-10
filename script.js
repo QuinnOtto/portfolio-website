@@ -88,13 +88,6 @@ document.getElementById("mail").addEventListener("click", function() {
     });
 });
 
-document.getElementById("phone").addEventListener("click", function() {
-    const phone = "+31 6 14466292";
-    navigator.clipboard.writeText(phone).then(() => {
-        alert("Phone copied to clipboard!");
-    });
-});
-
 document.getElementById("github").addEventListener("click", function() {
     const github = "https://github.com/QuinnOtto/";
     window.open(github);

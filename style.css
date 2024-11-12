@@ -500,3 +500,60 @@ body {
     display: none;
   }
 }
+@media (max-width: 1050px) {
+  #doodle_basketbal {
+    position: absolute;
+    top: -450px;
+    left: 10%;
+    width: 200px;
+    height: 200px;
+    z-index: -100;
+    animation: moveUpDown 3s infinite alternate;
+    -webkit-user-drag: none;
+  }
+}
+@media (max-width: 1770px) {
+  #doodle_css {
+    position: absolute;
+    top: -150px;
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    animation: moveUpDown 5s infinite alternate;
+    rotate: 30deg;
+    -webkit-user-drag: none;
+  }
+  #doodle_html {
+    position: absolute;
+    top: -100px;
+    left: 80%;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    animation: moveUpDown 6s infinite alternate;
+    rotate: -20deg;
+    -webkit-user-drag: none;
+  }
+  #doodle_basketbal {
+    position: absolute;
+    top: -400px;
+    left: 80%;
+    width: 200px;
+    height: 200px;
+    z-index: -100;
+    animation: moveUpDown 3s infinite alternate;
+    -webkit-user-drag: none;
+  }
+  #doodle_dino {
+    position: absolute;
+    top: -400px;
+    left: 15%;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    rotate: 10deg;
+    animation: moveUpDown 2s infinite alternate;
+    -webkit-user-drag: none;
+  }
+}

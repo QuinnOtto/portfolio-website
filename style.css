@@ -112,6 +112,17 @@ body {
   rotate: -20deg;
   -webkit-user-drag: none;
 }
+#doodle_js {
+  position: absolute;
+  top: -30px;
+  left: 35%;
+  width: 175px;
+  height: 175px;
+  z-index: -1;
+  rotate: 5deg;
+  animation: moveUpDown 3.5s infinite alternate;
+  -webkit-user-drag: none;
+}
 #doodle_basketbal {
   position: absolute;
   top: -400px;
@@ -125,7 +136,7 @@ body {
 #doodle_naam {
   position: absolute;
   top: -50px;
-  left: 45%;
+  left: 48%;
   width: 360px;
   height: 160px;
   z-index: -1;
@@ -136,7 +147,7 @@ body {
 #doodle_computer {
   position: absolute;
   top: -50px;
-  left: 25%;
+  left: 23%;
   width: 200px;
   height: 200px;
   z-index: -1;

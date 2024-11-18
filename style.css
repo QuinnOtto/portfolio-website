@@ -568,3 +568,15 @@ body {
     -webkit-user-drag: none;
   }
 }
+
+@media (max-width: 425px) {
+  .info_container {
+    font-size: 1rem;
+  }
+  #dynamic-text {
+    width: 200px;
+  } 
+  .footer_container {
+    font-size: 0.6rem;
+  }
+}

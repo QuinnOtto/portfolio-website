@@ -569,7 +569,7 @@ body {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .info_container {
     font-size: 1rem;
   }

@@ -568,7 +568,75 @@ body {
     -webkit-user-drag: none;
   }
 }
-
+/* @media (max-width: 1250px) {
+  #doodle_computer {
+    position: absolute;
+    top: -50px;
+    left: 20%;
+    width: 175px;
+    height: 175px;
+    z-index: -1;
+    rotate: 10deg;
+    animation: moveUpDown 3s infinite alternate;
+    -webkit-user-drag: none;
+  }
+  #doodle_js {
+    position: absolute;
+    top: -30px;
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    rotate: 5deg;
+    animation: moveUpDown 3.5s infinite alternate;
+    -webkit-user-drag: none;
+  }
+  #doodle_basketbal {
+    position: absolute;
+    top: -400px;
+    left: 80%;
+    width: 175px;
+    height: 175px;
+    z-index: -100;
+    animation: moveUpDown 3s infinite alternate;
+    -webkit-user-drag: none;
+  }
+}
+@media (max-width: 1050px ) {
+  #doodle_css {
+    position: absolute;
+    top: -100px;
+    left: 10%;
+    width: 115px;
+    height: 115px;
+    z-index: -1;
+    animation: moveUpDown 5s infinite alternate;
+    rotate: 30deg;
+    -webkit-user-drag: none;
+  }
+  #doodle_computer {
+    position: absolute;
+    top: -50px;
+    left: 23%;
+    width: 125px;
+    height: 125px;
+    z-index: -1;
+    rotate: 10deg;
+    animation: moveUpDown 3s infinite alternate;
+    -webkit-user-drag: none;
+  }
+  #doodle_naam {
+    position: absolute;
+    top: -50px;
+    left: 51%;
+    width: 255px;
+    height: 105px;
+    z-index: -1;
+    rotate: -10deg;
+    animation: moveUpDown 4s infinite alternate;
+    -webkit-user-drag: none;
+  }
+} */
 @media (max-width: 600px) {
   .info_container {
     font-size: 1rem;
@@ -580,7 +648,6 @@ body {
     font-size: 0.6rem;
   }
   .nav_bar_container a {
-    padding: 20px 15px;
     font-size: 0.8rem;
   }
 }

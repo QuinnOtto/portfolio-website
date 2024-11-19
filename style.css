@@ -579,4 +579,8 @@ body {
   .footer_container {
     font-size: 0.6rem;
   }
+  .nav_bar_container a {
+    padding: 20px 15px;
+    font-size: 0.8rem;
+  }
 }

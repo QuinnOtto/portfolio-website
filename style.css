@@ -505,6 +505,15 @@ body {
   #doodles_container {
     display: none;
   }
+  #about_container_text {
+  padding: 20px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: white;
+  flex: 1 1 50%;
+}
 }
 @media (max-width: 1024px) {
   #doodles_container {

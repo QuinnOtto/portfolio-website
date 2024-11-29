@@ -354,7 +354,31 @@ body {
 .project img {
   width: 100%;
   height: 150px;
-  border-radius: 8px 8px 0 0;
+}
+#project_usedtech {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+#project-text {
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+#project_usedtech img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.8s ease-in-out;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 10px;
+}
+#project_usedtech img:hover {
+  transform: scale(1.2);
 }
 .work_container {
   display: flex;
@@ -496,24 +520,23 @@ body {
     flex-direction: column;
     max-width: 100%;
   }
-  
-  #about_container_img, 
   #about_container_text {
+    padding: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    flex: 1 1 50%;
+  }
+  #about_container_img {
     flex: 1 1 auto; 
     width: 100%; 
   }
   #doodles_container {
     display: none;
   }
-  #about_container_text {
-  padding: 20px;
-  font-size: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  color: white;
-  flex: 1 1 50%;
-}
+
 }
 @media (max-width: 1024px) {
   #doodles_container {

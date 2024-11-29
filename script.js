@@ -134,7 +134,7 @@ fadeElements.forEach(el => observer.observe(el));
 const project1Elements = document.querySelectorAll(".project");
 project1Elements.forEach(element => {
     element.addEventListener("click", function() {
-        window.open("https://github.com/QuinnOtto/");
+        window.open("https://quinnotto.nl");
     });
 });
 

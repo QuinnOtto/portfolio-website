@@ -323,7 +323,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  padding: 40px 0;
   max-width: 1000px;
   margin: 0 auto;
   justify-content: center;

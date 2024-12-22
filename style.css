@@ -206,6 +206,7 @@ body {
 }
 
 #js,
+#react,
 #html,
 #css,
 #nodejs,
@@ -224,6 +225,7 @@ body {
 #js:hover,
 #html:hover,
 #css:hover,
+#react:hover,
 #nodejs:hover,
 #discordjs:hover,
 #figma:hover {
@@ -237,6 +239,7 @@ body {
 #js_text,
 #css_text,
 #nodejs_text,
+#react_text,
 #discordjs_text,
 #figma_text {
   display: inline-block;
@@ -249,6 +252,7 @@ body {
 #html_text h1,
 #js_text h1,
 #css_text h1,
+#react_text h1,
 #nodejs_text h1,
 #discordjs_text h1,
 #figma_text h1 {
@@ -266,6 +270,7 @@ body {
 #css_text p,
 #nodejs_text p,
 #discordjs_text p,
+#react_text p,
 #figma_text p {
   font-size: 0.85rem;
   color: #ffffff;
@@ -273,7 +278,6 @@ body {
   margin: 0;
   margin-top: 2px;
   padding: 0;
-  font-size: 0.8rem;
   text-align: left;
 }
 .programingLan_container img {

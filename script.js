@@ -166,8 +166,7 @@ const studentJobElement = document.getElementById("job_container_student");
 studentJobElement.addEventListener("click", function() {
     window.open("https://www.glr.nl/opleidingen/software-developer");
 });
-const studentJobElement = document.getElementById("react
-    ");
-studentJobElement.addEventListener("click", function() {
+const reactElement = document.getElementById("react");
+reactElement.addEventListener("click", function() {
     window.open("https://react.dev");
 });
